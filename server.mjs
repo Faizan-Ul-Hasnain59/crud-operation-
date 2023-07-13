@@ -6,10 +6,11 @@ app.get('/', (req, res) => {
   res.send('Hello World! by Faizan');
 })
 
-app.get('/name', (req, res) => {
+app.get('/name./myName:', (req, res) => {
+  const name = req.params.myName;
   res.send('Hello World! by ${name}');
 })
 
-app.listen(port, () => {
+app.listen(PORT, () => {
   console.log(`Example app listening on port ${PORT}`)
 })
