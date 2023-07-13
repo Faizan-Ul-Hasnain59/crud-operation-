@@ -1,15 +1,15 @@
-import express from 'express';
-const app = express()git pu
+import express from 'express'
+const app = express()
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-  res.send('Hello world! by Faizan');
+  res.send('Hello World! by Faizan');
 })
 
 app.get('/name', (req, res) => {
-    res.send('Hello world by ${name}');
-  })
+  res.send('Hello World! by ${name}');
+})
 
-app.listen(PORT, () => {
-  console.log(`Example app listening on PORT ${PORT}`)
+app.listen(port, () => {
+  console.log(`Example app listening on port ${PORT}`)
 })
