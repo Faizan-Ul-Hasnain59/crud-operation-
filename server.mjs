@@ -3,6 +3,7 @@ const app = express()
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
+  console.log("~file:server.mjs:7~app.get ~ req:" + req);
   res.send('Hello World! by Faizan');
 })
 
